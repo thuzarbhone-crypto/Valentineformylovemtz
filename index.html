@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For My Love</title>
+<style>
+body{
+margin:0;
+background:black;
+color:white;
+font-family:Georgia, serif;
+text-align:center;
+overflow:hidden;
+}
+#start{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:24px;
+cursor:pointer;
+}
+#scene{
+display:none;
+padding-top:50px;
+animation:fade 3s ease forwards;
+}
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+img{
+width:250px;
+margin:20px;
+border:5px solid gold;
+border-radius:10px;
+}
+.envelope{
+margin-top:30px;
+cursor:pointer;
+font-size:22px;
+color:pink;
+}
+.letter{
+display:none;
+margin:30px;
+max-width:800px;
+margin-left:auto;
+margin-right:auto;
+line-height:1.8;
+}
+</style>
+</head>
+<body>
+
+<div id="start" onclick="startExperience()">Tap to Begin ❤️</div>
+
+<div id="scene">
+<h2>Happy Valentine Day My Love Myo Thu Zar</h2>
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+
+<div class="envelope" onclick="openLetter()">💌 အချစ်ရဆုံး သို့</div>
+
+<div class="letter" id="letter">
+အချစ်ရဆုံးရေ Happy Valentine Day ပါ...
+(အချစ်ရဆုံးရေ Happy Valentine Day ပါ အရမ်းချစ်တယ်နော်။ စတွေ့ကတည်းက အရမ်းချစ်ခဲ့ရတာ အခုဆိုရင် ၂ နှစ်ကျော် ခဲ့ပြီ။
+တစ်စက္ကန့်လေးမှ မောင့်အချစ်ကို မေ့မသွားခဲ့ပါဘူးအချစ်။ ဘယ်လိုအခက်ခဲမျိုးရှိရှိ အနားမှာ ရှိပေးနေလို့ကျေးဇူးတင်ပါတယ်။ မပြည့်စုံ ရုန်းကန်နေရတာတွေကိုလည်း စိတ်မပျက်ဘဲ ၊ မှားခဲ့တဲ့ အမှားတွေကိုလည်း ခွင့်လွတ်နားလည်းပေးတာတွေကိုလည်း ‌ကျေးဇူးတင်ပါတယ်အချစ်ရယ်။ 
+အခက်ခဲတွေအများကြီး တူတူကျော်ဖြတ်လာခဲ့တာ အရမ်းကျေးဇူးတင်ပါတယ် အရမ်းလည်းချစ်ရပါတယ်။ ရှေ့ဆက်အခက်အခဲတွေဘယ်လိုဘဲကြုံကြုံ တူတူရင်ဆိုင်ကျော်ဖြတ်ကြမယ်နော်အချစ်။ 
+မှားခဲ့တဲ့အမှားတွေကိုလည်းထပ်ပြီးတောင်းပန်ပါရစေ။ အမှားတွေအားလုံးကို ဘယ်တော့မှ ထပ်မဖြစ်အောင် ပြင်ဆင်ပြီး အချစ်ကိုလည်းစိတ်မညစ်ရစေအောင် အများကြီးလည်းပိုပိုချစ်သွားပါမယ်အချစ်။
+အချစ်လည်းမောင့်ကိုဆက်ချစ်နေပေးပါအုံးနော်။ ဘယ်လိုအခက်ခဲရှိရှိ အနားမှာတူတူရင်ဆိုင်ပါအုံးနော်။ တစ်နေ့တော့ မောင်တို့အရာရာ အဆင်ပြေသွားမယ်လို့ယုံကြည်ပါတယ်. မောင်လည်းအများကြီး ကျိုးစားပါမယ်။ အရမ်းချစ်တယ်။ 
+For My Love, My Heart, My Prettiest Myo Thu Zar. I Love You so much and I Hope this will make you smile my love. အမှတ်တရလေးတစ်ခုဖြစ်အောင်ပေါ့ အချစ်ရယ်။ 
+လက်ရှိအခြေအနေအရ ဘာမှမလုပ်ပေး ဘာလက်ဆောင်မှသေချာမပေးနိုင်တာအတွက်လည်း တောင်းပန်ပါတယ်အချစ်။ တစ်နေတော့ဖြစ်အောင်ကျိုးစားပါမယ်။ တစ်ခုခုဆိုဘာမှကြီးကြီးမားမားလည်း မတောင်းဆိုတတ်တဲ့အချစ်ဆုံး။
+အများကြီးချစ်ပါတယ်နော်။ မောင့်ရဲ့လက်ဆောင်‌လေးပါ။ အချစ်ကြိုက်မှာပါနော်။ သိမ်းထားရမယ်နော်။ ❤️)
+</div>
+
+<audio id="music" src="music.mp3" loop></audio>
+
+</div>
+
+<script>
+function startExperience(){
+document.getElementById("start").style.display="none";
+document.getElementById("scene").style.display="block";
+document.getElementById("music").play();
+}
+function openLetter(){
+document.getElementById("letter").style.display="block";
+}
+</script>
+
+</body>
+</html>
